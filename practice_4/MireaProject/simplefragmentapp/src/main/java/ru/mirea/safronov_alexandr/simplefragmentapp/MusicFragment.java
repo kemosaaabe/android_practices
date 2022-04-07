@@ -1,5 +1,6 @@
 package ru.mirea.safronov_alexandr.simplefragmentapp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
@@ -9,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import ru.mirea.safronov_alexandr.simplefragmentapp.MyService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,34 +61,28 @@ public class MusicFragment extends Fragment {
         }
     }
 
-    Button play, pause;
+
+    Button play, stop;
+    MyService service;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_music, container, false);
 
-        play = (Button) view.findViewById(R.id.button);
-        pause = (Button) view.findViewById(R.id.button2);
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                service.stopService(new Intent(getActivity(), MyService.class));
+            }
+        });
 
-        final MediaPlayer sound = MediaPlayer.create(getActivity(), R.raw.music);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sound.setLooping(true);
-                sound.start();
+                service.startService(new Intent(getActivity(), MyService.class));
             }
         });
-
-        pause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (sound.isPlaying()) {
-                    sound.pause();
-                }
-            }
-        });
-
         return view;
     }
 }
