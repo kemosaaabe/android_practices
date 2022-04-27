@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android_projects/practice4/MireaProject/app/src/main/res/layout/activity_main.xml" value="0.22282608695652173" />
+        <entry key="..\:/android_projects/practice5/MireaProject/simplefragmentapp/src/main/res/layout/activity_main.xml" value="0.22282608695652173" />
+        <entry key="..\:/android_projects/practice5/MireaProject/simplefragmentapp/src/main/res/layout/calculate_fragment.xml" value="0.22282608695652173" />
+        <entry key="..\:/android_projects/practice5/MireaProject/simplefragmentapp/src/main/res/layout/fragment_audio.xml" value="0.22282608695652173" />
+        <entry key="..\:/android_projects/practice5/MireaProject/simplefragmentapp/src/main/res/layout/fragment_camera.xml" value="0.22282608695652173" />
+        <entry key="..\:/android_projects/practice5/MireaProject/simplefragmentapp/src/main/res/layout/fragment_sensors.xml" value="0.22282608695652173" />
+        <entry key="..\:/android_projects/practice5/MireaProject/simplefragmentapp/src/main/res/xml/filepath.xml" value="0.22282608695652173" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
