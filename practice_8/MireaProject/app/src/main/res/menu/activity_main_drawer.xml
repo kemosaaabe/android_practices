@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/calculateFragment"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="@string/calculate" />
+        <item
+            android:id="@+id/webViewFragment"
+            android:icon="?android:attr/actionModeWebSearchDrawable"
+            android:title="@string/webview" />
+        <item
+            android:id="@+id/musicFragment"
+            android:icon="@android:drawable/ic_lock_silent_mode_off"
+            android:title="@string/music" />
+        <item
+            android:id="@+id/sensorsFragment"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="@string/sensors" />
+        <item
+            android:id="@+id/cameraFragment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/camera" />
+        <item
+            android:id="@+id/audioFragment"
+            android:icon="@android:drawable/presence_audio_online"
+            android:title="@string/audio" />
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/storyFragment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Stories" />
+        <item
+            android:id="@+id/socketFragment"
+            android:icon="@android:drawable/ic_menu_more"
+            android:title="Socket" />
+        <item
+            android:id="@+id/bookFragment"
+            android:icon="@drawable/book"
+            android:title="Book" />
+    </group>
+</menu>
